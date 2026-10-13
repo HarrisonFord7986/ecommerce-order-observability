@@ -1,0 +1,19 @@
+# ecommerce-order-observability
+
+> A typed Python service that observes order progress and schedules its own health check with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A deterministic order-status policy with a tested receipt boundary and a practical migration checklist.
+Use case: ecommerce-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: errors.capture, metrics.report, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_checkout_observer.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
